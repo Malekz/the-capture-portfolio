@@ -1,23 +1,26 @@
 import React from 'react';
-
 import home1 from '../img/home1.png';
+
+// Styled
+//import styled from 'styled-components';
+import { About, Description, Image, Hide } from '../styles';
 
 const AboutSection = () => {
   return (
-    <>
-      <div className="description">
+    <About>
+      <Description>
         <div className="title">
-          <div className="hide">
+          <Hide className="hide">
             <h2>We work to make</h2>
-          </div>
+          </Hide>
           <div className="hide">
             <h2>
               your <span>dreams</span>come
             </h2>
           </div>
-          <div className="hide">
+          <Hide className="hide">
             <h2>true.</h2>
-          </div>
+          </Hide>
         </div>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nihil
@@ -25,11 +28,11 @@ const AboutSection = () => {
           id deserunt laborum?
         </p>
         <button>Contact Us</button>
-        <div className="image">
-          <img src={home1} alt="guy with a camera" />
-        </div>
-      </div>
-    </>
+      </Description>
+      <Image className="image">
+        <img src={home1} alt="guy with a camera" />
+      </Image>
+    </About>
   );
 };
 
