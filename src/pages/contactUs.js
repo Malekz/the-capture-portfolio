@@ -11,7 +11,7 @@ const ContactUs = () => {
       variants={pageAnimation}
       initial="hidden"
       animate="show"
-      style={{ background: '#fff' }}
+      style={{ background: '#ffffff' }}
     >
       <Title>
         <Hide>
